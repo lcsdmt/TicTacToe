@@ -33,3 +33,7 @@
 .right {
     border-left: 1px black solid;
 }
+
+div.row {
+    cursor: pointer;
+}
