@@ -16,7 +16,7 @@ function cellClicked(event) {
     timesClicked ++;
     if (event.target.textContent == "") {
         event.target.textContent = currentPlayer
-    }if (currentPlayer == "🥁") {
+    } if (currentPlayer == "🥁") {
         currentPlayer = "🎸";
     } else {
         currentPlayer = "🥁"
