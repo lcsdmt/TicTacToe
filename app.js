@@ -13,8 +13,8 @@ let winner = document.getElementById("winner");
 let draw = document.getElementById("winner");
 
 function cellClicked(event) {
-    timesClicked ++;
     if (event.target.textContent == "") {
+        timesClicked++;
         event.target.textContent = currentPlayer
     } if (currentPlayer == "🥁") {
         currentPlayer = "🎸";
@@ -30,6 +30,9 @@ function cellClicked(event) {
         cells[0].textContent == "🥁" && cells[4].textContent == "🥁" && cells[8].textContent == "🥁" ||
         cells[2].textContent == "🥁" && cells[4].textContent == "🥁" && cells[6].textContent == "🥁") {
         winner.innerHTML = "👑 🥁 WINS!!! 👑"
+        for (cell of cells) {
+            cell.removeEventListener('click', cellClicked);
+        }
     } else if (
         cells[0].textContent == "🎸" && cells[1].textContent == "🎸" && cells[2].textContent == "🎸" ||
         cells[3].textContent == "🎸" && cells[4].textContent == "🎸" && cells[5].textContent == "🎸" ||
@@ -40,7 +43,13 @@ function cellClicked(event) {
         cells[0].textContent == "🎸" && cells[4].textContent == "🎸" && cells[8].textContent == "🎸" ||
         cells[2].textContent == "🎸" && cells[4].textContent == "🎸" && cells[6].textContent == "🎸") {
         winner.innerHTML = "👑 🎸 WINS!!! 👑"
-    } else if (timesClicked == 9) draw.innerHTML = "😭 DRAW 😭";
+        for (cell of cells) {
+            cell.removeEventListener('click', cellClicked);
+        }
+    } else if (timesClicked == 9) {draw.innerHTML = "😭 DRAW 😭"
+    for (cell of cells) {
+        cell.removeEventListener('click', cellClicked);
+}}
 }
 
 //const winningCombos = [
