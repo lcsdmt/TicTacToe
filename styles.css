@@ -18,12 +18,12 @@ div.row {
 
 #title{
     text-decoration: underline;
-    background-color: white;
+    color: white;
 }
 
 #winner{
     color: black;
-    background-color: white;
+    color: white;
 }
 
 .row {
@@ -32,9 +32,13 @@ div.row {
     width: 302px;
 }
 
+body{
+    background-color: black;
+}
+
 .top {
-    background-color: white;
     border-bottom: 1px black solid;
+    border-color: blueviolet;
     background-image: url(https://i.etsystatic.com/15764758/r/il/38d557/1654947841/il_1588xN.1654947841_eass.jpg);
     background-size: 100px;
     background-position: center;
@@ -42,8 +46,8 @@ div.row {
 }
 
 .bottom{
-    background-color: white;
     border-top: 1px black solid;
+    border-color: blueviolet;
     background-image: url(https://i.etsystatic.com/15764758/r/il/38d557/1654947841/il_1588xN.1654947841_eass.jpg);
     background-size: 100px;
     background-position: center;
@@ -51,7 +55,6 @@ div.row {
 }
 
 .center{
-    background-color: white;
     background-image: url(https://i.etsystatic.com/15764758/r/il/38d557/1654947841/il_1588xN.1654947841_eass.jpg);
     background-size: 100px;
     background-position: center;
@@ -60,15 +63,17 @@ div.row {
 
 .left {
     border-right: 1px black solid;
+    border-color: blueviolet;
     
 }
 
 .right {
     border-left: 1px black solid;
+    border-color: blueviolet;
 }
 
 button{
     text-align: center;
-    background-color: black;
-    color: cyan;
+    background-color: blueviolet;
+    color: black;
 }
