@@ -18,10 +18,12 @@ div.row {
 
 #title{
     text-decoration: underline;
+    background-color: white;
 }
 
 #winner{
-    color: royalblue;
+    color: black;
+    background-color: white;
 }
 
 .row {
@@ -31,15 +33,34 @@ div.row {
 }
 
 .top {
+    background-color: white;
     border-bottom: 1px black solid;
+    background-image: url(https://i.etsystatic.com/15764758/r/il/38d557/1654947841/il_1588xN.1654947841_eass.jpg);
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .bottom{
+    background-color: white;
     border-top: 1px black solid;
+    background-image: url(https://i.etsystatic.com/15764758/r/il/38d557/1654947841/il_1588xN.1654947841_eass.jpg);
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.center{
+    background-color: white;
+    background-image: url(https://i.etsystatic.com/15764758/r/il/38d557/1654947841/il_1588xN.1654947841_eass.jpg);
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .left {
     border-right: 1px black solid;
+    
 }
 
 .right {

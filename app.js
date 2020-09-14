@@ -72,7 +72,6 @@ function cellClicked(event) {
 //};
 
 
-
 //  if unable to use const
 //  if (cells == winningCombos) {} ?? needed for const?
 
